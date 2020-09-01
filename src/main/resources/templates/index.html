@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>JavaScript-Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!CSS--->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.11.1.css">
+
+    <!JS--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<section>
+<div class="container">
+    <button class="reset" id="reset" >Reset</button><span>   </span>
+    <button id="history" class="reset" >History Calculations</button>
+
+    <div id="calculator" class="calculator">
+        <button id="clear" class="clear">C</button>
+
+        <div id="viewer" class="viewer" >0</div>
+
+        <button class="num" data-num="7">7</button>
+        <button class="num" data-num="8">8</button>
+        <button class="num" data-num="9">9</button>
+        <button data-ops="plus" class="ops">+</button>
+
+        <button class="num" data-num="4">4</button>
+        <button class="num" data-num="5">5</button>
+        <button class="num" data-num="6">6</button>
+        <button data-ops="minus" class="ops">-</button>
+
+        <button class="num" data-num="1">1</button>
+        <button class="num" data-num="2">2</button>
+        <button class="num" data-num="3">3</button>
+        <button data-ops="times" class="ops">*</button>
+
+        <button class="num" data-num="0">0</button>
+        <button class="num" data-num=".">.</button>
+        <button id="equals" class="equals" data-result="">=</button>
+        <button data-ops="divided by" class="ops">/</button>
+        <button data-ops="factorial" class="ops">!n</button>
+        <button data-ops="power" class="ops">x^n</button>
+        <button class="num" data-num="+/-">+/-</button>
+        <button data-ops="trunc" class="ops">trunc</button>
+        <button id="toString" class="toString">toString</button><br><br>
+
+    </div>
+    <div id="postResultDiv"></div>
+    <div id="getResultDiv">
+        <ul class="list-group">
+        </ul>
+    </div>
+</div><!-Container--->
+</section>
+
+<section>
+<div id="test">
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+</div>
+</section><!--QUnit-->
+<!--Scripts JS--->
+<script src="https://code.jquery.com/qunit/qunit-2.11.1.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
